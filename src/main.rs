@@ -7,8 +7,19 @@ use std::{
 
 use reqwest::blocking::get;
 
+use clap::Parser;
+
+#[derive(Parser)]
+#[command(name = "Baker", about = "Pi-Hole blocklist consolidator")]
+struct Args {
+    #[arg(short)]
+    input: String,
+}
+
 fn main() -> Result<(), Box<dyn Error>> {
-    let sources = read_sources("sources.txt")?;
+    let args = Args::parse();
+
+    let sources = read_sources(&args.input)?;
     let mut domains = HashSet::new();
 
     for url in sources {
