@@ -1,0 +1,3 @@
+https://urlhaus.abuse.ch/downloads/hostfile/
+https://v.firebog.net/hosts/Easylist.txt
+https://v.firebog.net/hosts/Easylist.txt
