@@ -1,0 +1,1 @@
+https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/SmartTV.txt

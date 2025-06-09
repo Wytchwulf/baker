@@ -6,4 +6,5 @@ edition = "2024"
 [dependencies]
 clap = { version = "4.5.39", features = ["derive"] }
 reqwest = { version = "0.11", features = ["blocking", "rustls-tls"] }
-
+rust-embed = "8.7.2"
+url = "2"
